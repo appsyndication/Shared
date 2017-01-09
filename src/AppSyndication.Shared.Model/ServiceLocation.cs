@@ -13,11 +13,11 @@ namespace AppSyndication.Shared.Model
                 this.Host = ServiceLocationConstants.DevelopmentHostname;
                 this.Port = developmentPort;
             }
-            if (environmentName.Equals(EnvironmentName.Staging, StringComparison.OrdinalIgnoreCase))
+            else if (environmentName.Equals(EnvironmentName.Staging, StringComparison.OrdinalIgnoreCase))
             {
                 throw new NotImplementedException();
             }
-            if (environmentName.Equals(EnvironmentName.Production, StringComparison.OrdinalIgnoreCase))
+            else if (environmentName.Equals(EnvironmentName.Production, StringComparison.OrdinalIgnoreCase))
             {
                 this.Scheme = "https";
                 this.Host = productionHostname;

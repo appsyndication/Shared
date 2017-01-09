@@ -12,6 +12,6 @@
 
         public const int UserServiceDevelopmentPort = 3002;
 
-        public const string UserServiceProductionHostname = "as-us.azurewebsites.net";
+        public const string UserServiceProductionHostname = "as-usr.azurewebsites.net";
     }
 }

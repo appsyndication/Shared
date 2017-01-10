@@ -1,4 +1,4 @@
-﻿namespace AppSyndication.Shared.Model
+﻿namespace AppSyndication.Shared.Models
 {
     public interface IServiceLocation
     {

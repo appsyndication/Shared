@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 
-namespace AppSyndication.Shared.Model
+namespace AppSyndication.Shared.Models
 {
     public class UserServiceLocation : ServiceLocation, IUserServiceLocation
     {
         private IHostingEnvironment _environment;
 
-        public UserServiceLocation(IHostingEnvironment env) : 
+        public UserServiceLocation(IHostingEnvironment env) :
             base(env.EnvironmentName, ServiceLocationConstants.UserServiceDevelopmentPort, ServiceLocationConstants.UserServiceProductionHostname)
         {
             this.UserClaimsUri = this.Uri + "user/claims/";

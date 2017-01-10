@@ -5,7 +5,7 @@
 
 @pushd %_P%
 
-dotnet pack .\src\AppSyndication.Shared.Model --configuration %CONFIGURATION% --version-suffix %DNX_BUILD_VERSION% --output %_P%artifacts\public
+dotnet pack .\src\AppSyndication.Shared.Models --configuration %CONFIGURATION% --version-suffix %DNX_BUILD_VERSION% --output %_P%artifacts\public
 
 @goto :End
 

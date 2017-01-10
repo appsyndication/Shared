@@ -1,4 +1,4 @@
-﻿using AppSyndication.Shared.Model;
+﻿using AppSyndication.Shared.Models;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Microsoft.Extensions.DependencyInjection

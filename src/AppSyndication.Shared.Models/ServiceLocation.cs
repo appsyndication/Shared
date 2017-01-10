@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Hosting;
 
-namespace AppSyndication.Shared.Model
+namespace AppSyndication.Shared.Models
 {
     public abstract class ServiceLocation : IServiceLocation
     {

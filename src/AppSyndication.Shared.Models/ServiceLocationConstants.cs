@@ -6,6 +6,10 @@
 
         public const string DevelopmentHostname = "localhost";
 
+        public const int AccountWebDevelopmentPort = 3002;
+
+        public const string AccountWebProductionHostname = "as-ac.azurewebsites.net";
+
         public const int IdentityServiceDevelopmentPort = 3001;
 
         public const string IdentityServiceProductionHostname = "as-id.azurewebsites.net";

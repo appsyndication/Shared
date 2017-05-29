@@ -1,7 +1,9 @@
 ﻿namespace AppSyndication.Shared.Models
 {
-    public interface IIdentityServiceLocation : IServiceLocation
+    public interface IUserServiceLocation : IServiceLocation
     {
-        string TokenUri { get; }
+        string UserClaimsUri { get; }
+
+        string VersionUri { get; }
     }
 }

@@ -3,12 +3,9 @@
     only:
       - master
 
-  version: 0.1.0-build-{build}
-
   configuration: Release
 
   environment:
-    DNX_BUILD_VERSION: build-%APPVEYOR_BUILD_NUMBER%
     DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
     DOTNET_CLI_TELEMETRY_OPTOUT: 1
     NUGET_XMLDOC_MODE: skip
@@ -36,12 +33,9 @@
   skip_tags: true
 
 - # Development branches build.
-  version: 0.1.0-build-{branch}-{build}
-
   configuration: Debug
 
   environment:
-    DNX_BUILD_VERSION: build-%APPVEYOR_REPO_BRANCH%-%APPVEYOR_BUILD_NUMBER%
     DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
     DOTNET_CLI_TELEMETRY_OPTOUT: 1
     NUGET_XMLDOC_MODE: skip
